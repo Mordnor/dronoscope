@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+<div class="col-12 home">
+	{% placeholder "content" %}
+	<div class="content one">
+		<div class="bk l">
+			<div class="arrow top"></div>
+			<div class="arrow bottom"></div>
+		</div>
+
+		<div class="skew l"></div>
+
+		<div class="main">
+			<div>{% placeholder 'ribbon' %}</div>
+		</div>
+
+		<div class="skew r"></div>
+
+		<div class="bk r">
+			<div class="arrow top"></div>
+			<div class="arrow bottom"></div>
+		</div>
+	</div>
+	{% placeholder "after-ribbon" %}
+</div>
+<div class="col-12 presentation">
+	{% placeholder "content_presentation" %}
+	<section>
+	{% placeholder "content_presentation_article" %}
+	<section>
+</div>
+
+<div class="col-12 service">
+	{% placeholder "content_service" %}
+	<section>
+	{% placeholder "content_service_article" %}
+	<section>
+</div>
+
+<div class="col-12 portfolio">
+	{% placeholder "content_portfolio" %}
+	<section>
+	{% placeholder "content_portfolio_article" %}
+	<section>
+</div>
+
+<div class="col-12 contact">
+	{% placeholder "content_contact" %}
+	<section>
+	{% placeholder "content_contact_article" %}
+	<section>
+</div>
+{% endblock content %}

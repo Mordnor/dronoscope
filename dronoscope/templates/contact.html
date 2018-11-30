@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+<div class="col-12 contact">
+	{% placeholder "content_contact" %}
+	<section>
+	{% placeholder "content_contact_article" %}
+	<section>
+</div>
+{% endblock content %}

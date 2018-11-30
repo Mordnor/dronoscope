@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+<div class="col-12 home">
+	{% placeholder "content" %}
+	<div class="content one">
+		<div class="bk l">
+			<div class="arrow top"></div>
+			<div class="arrow bottom"></div>
+		</div>
+
+		<div class="skew l"></div>
+
+		<div class="main">
+			<div>{% placeholder 'ribbon' %}</div>
+		</div>
+
+		<div class="skew r"></div>
+
+		<div class="bk r">
+			<div class="arrow top"></div>
+			<div class="arrow bottom"></div>
+		</div>
+	</div>
+	{% placeholder "after-ribbon" %}
+</div>
+{% endblock content %}

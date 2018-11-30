@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+
+<div class="col-12 service">
+	{% placeholder "content_service" %}
+	<section>
+		<div class="row">
+			<div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				{% placeholder "content_service_article_image" %}
+			</div>
+			<div class="col col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+				{% placeholder "content_service_article_text" %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				{% placeholder "content_service_article_image1" %}
+			</div>
+			<div class="col col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+				{% placeholder "content_service_article_text1" %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				{% placeholder "content_service_article_image2" %}
+			</div>
+			<div class="col col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+				{% placeholder "content_service_article_text2" %}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				{% placeholder "content_service_article_image3" %}
+			</div>
+			<div class="col col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+				{% placeholder "content_service_article_text3" %}
+			</div>
+		</div>
+		<section>
+</div>
+{% endblock content %}
